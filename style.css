@@ -1,0 +1,72 @@
+/* 
+ Theme Name:   The WP Guru 2018
+ Theme URI:    https://wpguru.co.uk
+ Description:  child theme based on TwentyThirteen
+ Author:       Jay Versluis
+ Author URI:   https://wpguru.co.uk
+ Template:     twentythirteen
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+ /* == Add your own styles below this line ==
+--------------------------------------------*/
+
+/* invisibilise site title so that the header stays in place on mobile */
+.site-title, .site-description {
+	opacity: 0 !important;
+	margin-bottom: -40;
+}
+
+/* shift mobile header up by 10 pixels to avoid cutting off the bottom */
+.site-header {
+	margin-top: -10px !important;
+	margin-bottom: 10px !important;
+}
+
+@media (max-width: 767px) {
+	.site-title {
+		margin-bottom: 40;
+	}
+}
+
+@media (max-width: 643px) {
+	.site-title {
+		margin-bottom: 45;
+	}
+}
+
+/* stop hypenating words */
+.entry-content, .entry-summary, .page-content, .comment-content {
+		
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	word-wrap: normal;
+}
+
+/* do hyphenate links though */
+.entry-content a, .entry-summary a, .page-content a, .comment-content a {
+	
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+}
+
+/* add padding to H3 tags in posts */
+.entry-content h3, h3 {
+	padding-top: 20px;
+}
+
+/* split the margin in paragraphs between top and bottom */
+p {
+	margin-top: 12;
+	margin-bottom: 12;
+}
+
+.crayon-theme-github {
+	border: none !important;
+}
