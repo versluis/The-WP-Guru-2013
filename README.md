@@ -7,6 +7,7 @@ WordPress Child Theme for my site https://wpguru.tv based on Automattic's Twenty
 * modified header so that a graphic can be displayed without resizing issues on mobile
 * Table of Contents functionality
 * removed Jetpack upsell messages in admin interface
+* removed word hyphenation (but left link hyphenation in place)
 * dedicated page templates to list articles in specific categories
 * word count feature for Table of Contents
 * adds the Apple Podcasts Bagde underneath respective categories
