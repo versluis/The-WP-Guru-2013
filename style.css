@@ -92,7 +92,7 @@ p {
 	margin-top: 12px;
 }
 
-/* make Akismet notice look handsome on single posts */
+/* Akismet looks terrible on single posts */
 .akismet_comment_form_privacy_notice {
 	display: none;
 }
