@@ -16,6 +16,7 @@
 
 v1.1 - September 2018
 added Apple Badge underneath podcast categories
+added Stitcher Badge underneath podcast categories
 replaced screenshot
 added page templates for podcast feeds
 tweaked Akismet notice on single posts
@@ -90,6 +91,18 @@ p {
     margin-left: auto;
     margin-right: auto;
 	margin-top: 12px;
+	width: 260px;
+	height: auto;
+}
+
+/* style Stitcher Badge */
+#stitcher-badge {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: -10px;
+	width: 200px;
+	height: auto;
 }
 
 /* Akismet looks terrible on single posts */
