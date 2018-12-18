@@ -1,16 +1,31 @@
 /* 
  Theme Name:   The WP Guru 2018
- Theme URI:    https://wpguru.co.uk
+ Theme URI:    https://github.com/versluis/The-WP-Guru-2013
  Description:  child theme based on TwentyThirteen
  Author:       Jay Versluis
  Author URI:   https://wpguru.co.uk
  Template:     twentythirteen
- Version:      1.0
+ Version:      1.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
  /* == Add your own styles below this line ==
 --------------------------------------------*/
+
+/* CHANGELOG
+
+v1.1 - September 2018
+added Apple Badge underneath podcast categories
+added Stitcher Badge underneath podcast categories
+replaced screenshot
+added page templates for podcast feeds
+tweaked Akismet notice on single posts
+added YouTube badge to serial posts
+
+v1.0 1.0 - August 2018
+initial release
+
+*/
 
 /* invisibilise site title so that the header stays in place on mobile */
 .site-title, .site-description {
@@ -69,4 +84,40 @@ p {
 
 .crayon-theme-github {
 	border: none !important;
+}
+
+/* style Apple Podcasts Badge */
+#apple-badge {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 12px;
+	width: 260px;
+	height: auto;
+}
+
+/* style Stitcher Badge */
+#stitcher-badge {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: -10px;
+	width: 200px;
+	height: auto;
+}
+
+/* style YouTube Badge */
+#youtube-badge {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 12px;
+	width: 260px;
+	height: auto;
+}
+
+/* Akismet looks terrible on single posts */
+.akismet_comment_form_privacy_notice {
+	display: none;
 }

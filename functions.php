@@ -1,6 +1,6 @@
 <?php /*
 
-  This file is part of a child theme called The WP Guru 2018.
+  This file is part of a child theme called The WP Guru 2013.
   Functions in this file will be loaded before the parent theme's functions.
   For more information, please read https://codex.wordpress.org/Child_Themes.
 
@@ -16,6 +16,8 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 /*  Add your own functions below this line.
     ======================================== */ 
+
+include 'includes/podcast-badge.php';
 
 /* remove JetPack upsell messages */
 /* https://mattreport.com/disable-jetpack-upsell-ads/ */
