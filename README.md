@@ -1,7 +1,7 @@
 # The WP Guru 2013
 WordPress Child Theme for my site https://wpguru.tv based on Automattic's TwentyThirteen Theme
 
-![](screenshot.png)
+![](screenshot.jpg)
 
 # Features
 * modified header so that a graphic can be displayed without resizing issues on mobile
@@ -11,6 +11,7 @@ WordPress Child Theme for my site https://wpguru.tv based on Automattic's Twenty
 * dedicated page templates to list articles in specific categories
 * word count feature for Table of Contents
 * adds the Apple Podcasts Bagde underneath respective categories
+* implements the Auhor Bio Box on single user sites
 
 # Plugins
 I use a number of plugins to make the rest of the site tick:
