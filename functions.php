@@ -54,3 +54,10 @@ function guru_getWordCountCommentsCurrentUser() {
 	}
 	return $count;
 }
+
+function clickable_content ($content){
+	
+	$content = make_clickable($content);
+	return $content;
+}
+add_filter ('the_content', 'clickable_content');
