@@ -23,9 +23,9 @@ include 'includes/podcast-badge.php';
 /* https://mattreport.com/disable-jetpack-upsell-ads/ */
 add_filter( 'jetpack_just_in_time_msgs', '_return_false' );
 
-
-/* Word Count functions */
-
+/* ---------------------
+/* Word Count functions 
+/* ---------------------*/
 function guru_getWordCountFromPosts () {
 	
 	$count = 0;
