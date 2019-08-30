@@ -5,7 +5,7 @@
  Author:       Jay Versluis
  Author URI:   https://wpguru.co.uk
  Template:     twentythirteen
- Version:      1.2
+ Version:      1.4
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,12 @@
 --------------------------------------------*/
 
 /* CHANGELOG
+
+v1.4 - July 2019
+added Upload Capabilities to the Contributor Role
+
+v1.3 - April 2019
+Podcast links only show on single posts
 
 v1.2 - December 2018
 added Amazon oneLink code in footer
