@@ -3,7 +3,7 @@
 // Apple Podcast Badge functions
 // since @1.1
 
-function versluis2013_add_badge ($content){
+function versluis2013_add_badge ($content) {
 	
 	$appleBadge = get_stylesheet_directory_uri() . "/images/Apple-Podcasts-Badge.png";
 	$stitcherBadge = get_stylesheet_directory_uri() . "/images/Stitcher-Badge.png";
@@ -45,9 +45,15 @@ function versluis2013_add_badge ($content){
 		// it's not a Podcast
 		$after = '';	
 	}
-
-	$content = $content . $after;
-	return $content;
+	
+	// depending on where we are, print the podcast icons
+	// since @1.3
+	
+	if (is_single()) {
+		return $content . $after;
+	} else {
+		return $content;
+	}
 }
 add_filter ('the_content', 'versluis2013_add_badge');
 

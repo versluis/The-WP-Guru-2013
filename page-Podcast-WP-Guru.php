@@ -44,7 +44,7 @@ get_header(); ?>
 // count all articles in this category
 $query = new WP_Query( array( 'category_name' => 'gurucast', 'nopaging' => true ) );
 $results = $query->found_posts;
-echo "<p>There are currently <strong>$results episodes</strong> to listen to in The WP Guru Podcast Feed.<br>Here's a list of every single one:</p>";
+echo "<p>There are currently <strong>$results</strong> episodes to listen to in The WP Guru Podcast Feed.<br>Here's a list of every single one:</p>";
 
 // list all articles in this category
 // echo "<h3>Commodore Articles</h3>";
