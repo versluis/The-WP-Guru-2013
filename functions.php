@@ -23,9 +23,9 @@ include 'includes/podcast-badge.php';
 /* https://mattreport.com/disable-jetpack-upsell-ads/ */
 add_filter( 'jetpack_just_in_time_msgs', '_return_false' );
 
-
-/* Word Count functions */
-
+/* ---------------------
+/* Word Count functions 
+/* ---------------------*/
 function guru_getWordCountFromPosts () {
 	
 	$count = 0;
@@ -61,3 +61,25 @@ function clickable_content ($content){
 	return $content;
 }
 add_filter ('the_content', 'clickable_content');
+
+//
+// add file uploads to Contributor role
+// @since 1.4
+// 
+function guru_add_uploads_to_contribs () {
+	global $pagenow;
+	
+	// grab contribtor role
+	$role = get_role ('contributor');
+	
+	// if this theme is activated, add the upload capability
+	if ('themes.php' == $pagenow && isset ($_GET['activated'])) {
+		$role -> add_cap ('upload_files');
+	} else {
+		// remove when deactivated
+		$role -> remove_cap ('upload_files');
+	}
+}
+add_action ('load-themes.php', 'guru_add_uploads_to_contribs');
+
+
