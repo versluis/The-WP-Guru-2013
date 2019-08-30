@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * TOC - All Articles - WP Guru 2013 Theme
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages and that other
@@ -10,7 +10,7 @@
  * @subpackage Twenty_Thirteen
  * @since Twenty Thirteen 1.0
  
-  Template Name: All My Articles
+  Template Name: TOC - All My Articles
  
  */
 
