@@ -83,3 +83,17 @@ function guru_add_uploads_to_contribs () {
 add_action ('load-themes.php', 'guru_add_uploads_to_contribs');
 
 
+//
+// add Divi Banner at the top of the page
+// @since 1.5
+function showDiviBanner () {
+	// build the banner
+	$divi = '<a href="https://www.elegantthemes.com/affiliates/idevaffiliate.php?id=6674_5_1_20" target="_blank" rel="nofollow"><img style="border:0px" src="https://www.elegantthemes.com/affiliates/media/banners/divi_728x90.jpg" width="728" height="90" alt="Divi WordPress Theme"></a>';
+	$banner = '<div align="center">' . $divi . '</div>';
+	
+	// if we're logged in, don't show the banner
+	if (!is_user_logged_in()) {
+		echo $banner;
+	}
+}
+add_action ('get_header', 'showDiviBanner');
