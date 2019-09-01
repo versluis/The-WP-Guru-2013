@@ -91,9 +91,15 @@ function showDiviBanner () {
 	$divi = '<a href="https://www.elegantthemes.com/affiliates/idevaffiliate.php?id=6674_5_1_20" target="_blank" rel="nofollow"><img style="border:0px" src="https://www.elegantthemes.com/affiliates/media/banners/divi_728x90.jpg" width="728" height="90" alt="Divi WordPress Theme"></a>';
 	$banner = '<div align="center">' . $divi . '</div>';
 	
-	// if we're logged in, don't show the banner
-	if (!is_user_logged_in()) {
-		echo $banner;
-	}
+	global $post;
+
+    // if we're logged in, or if this is the donations page, 
+	// or if this is the home page, do not show the banner
+	if (is_user_logged_in()) return;
+	if ($post->post_name == 'support') return;
+	if (is_home()) return;
+	
+	// print the banner
+	echo $banner;
 }
 add_action ('get_header', 'showDiviBanner');
