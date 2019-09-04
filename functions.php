@@ -94,11 +94,13 @@ function showDiviBanner () {
 	global $post;
 
     // if we're logged in, or if this is the donations /hire me page, 
-	// or if this is the home page, do not show the banner
+	// or if this is the home page, or if we're mobile,
+	// do not show the banner
 	if (is_user_logged_in()) return;
 	if ($post->post_name == 'support') return;
 	if ($post->post_name == 'hire-me') return;
 	if (is_home()) return;
+	if (wp_is_mobile()) return;
 	
 	// print the banner
 	echo $banner;
