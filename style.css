@@ -5,7 +5,7 @@
  Author:       Jay Versluis
  Author URI:   https://wpguru.co.uk
  Template:     twentythirteen
- Version:      1.5
+ Version:      1.6
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,9 @@
 --------------------------------------------*/
 
 /* CHANGELOG
+
+v1.6 - December 2019 
+added affiliate link disclosure in footer
 
 v1.5 - September 2019
 added Divi Banner for visitors
@@ -53,6 +56,11 @@ initial release
 .site-header {
 	margin-top: -10px !important;
 	margin-bottom: 10px !important;
+}
+
+/* Hotfix for YouTube Videos */
+.wp-embed-responsive .wp-block-embed.wp-embed-aspect-16-9 .wp-block-embed__wrapper {
+    margin-top: -350px;	
 }
 
 @media (max-width: 767px) {
