@@ -3,7 +3,7 @@ WordPress Child Theme for my site https://wpguru.tv based on Automattic's Twenty
 
 ![](screenshot.jpg)
 
-![](images/YouTube-Badge.jpg)
+![](images/YouTube-Badge.png)
 
 # Features
 * modified header so that a graphic can be displayed without resizing issues on mobile
