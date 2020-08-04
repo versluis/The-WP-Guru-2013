@@ -27,3 +27,10 @@ function showDiviBanner () {
 	echo $banner;
 }
 add_action ('get_header', 'showDiviBanner');
+
+// add Amazon oneLink shenanigans
+function guru_amazonOneLink() {
+	$oneLink = '<div id="amzn-assoc-ad-5e4fb363-4081-411a-8049-667d48d2b006"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5e4fb363-4081-411a-8049-667d48d2b006"></script>';
+	echo $oneLink;
+}
+add_action ('wp_footer', 'guru_amazonOneLink');
