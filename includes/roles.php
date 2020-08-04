@@ -36,3 +36,17 @@ function guru_define_supporter_role () {
         );
 }
 add_action ('init', 'guru_define_supporter_role');
+
+// give Admin access to all file type uploads
+// requires constant definition to work: 
+// define( 'ALLOW_UNFILTERED_UPLOADS', true );
+// @since 1.7
+// doesn't work - thanks SchlonzPress!
+
+function guru_upload_everything () {
+
+	$role = get_role ('administrator');
+	$role->add_cap('unfiltered_upload', true);
+
+}
+// add_action ('init', 'guru_upload_everything', 11);
