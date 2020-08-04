@@ -1,7 +1,7 @@
 <?php
 // The WP Guru 2013
 // Apple Podcast Badge functions
-// since @1.1
+// @since 1.1
 
 function versluis2013_add_badge ($content) {
 	
@@ -47,7 +47,7 @@ function versluis2013_add_badge ($content) {
 	}
 	
 	// depending on where we are, print the podcast icons
-	// since @1.3
+	// @since 1.3
 	
 	if (is_single()) {
 		return $content . $after;
